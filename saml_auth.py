@@ -198,7 +198,7 @@ class SAMLAuthBackend:
                 error_reason = auth.get_last_error_reason()
         elif "Referer" in request.headers and  len(request.args) == 0 :
             # return redirect(auth.get_slo_url()) # LOgout from one application but cookies will be used for furthur login
-            return redirect("https://mpoddar.awsapps.com/start#/signout") # Logout from app completly
+            return redirect("https://XXXXX.awsapps.com/start#/signout") # Logout from app completly
 
         if 'samlUserdata' in session:
             paint_logout = True
